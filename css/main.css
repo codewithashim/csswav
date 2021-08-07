@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+body .wav {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  background: #333;
+  overflow: hidden;
+}
+body .wav::before {
+  content: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+  font-size: 4rem;
+  color: transparent;
+  position: absolute;
+  top: -80%;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  -webkit-text-decoration-color: #ffff;
+          text-decoration-color: #ffff;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-animation: animate 1s linear infinite;
+          animation: animate 1s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    transform: translateX(-0.2px);
+  }
+  100% {
+    transform: translateX(-52px);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-0.2px);
+  }
+  100% {
+    transform: translateX(-52px);
+  }
+}/*# sourceMappingURL=main.css.map */

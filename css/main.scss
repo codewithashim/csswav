@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+
+  .wav {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    background: #333;
+    overflow: hidden;
+
+    &::before{
+        content: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+        font-size: 4rem;
+        color: transparent;
+        position: absolute;
+        top: -80%;
+        text-decoration-style: wavy;
+        text-decoration-color:  #ffff;
+        text-decoration-line: underline;
+        animation: animate 1s linear infinite;
+
+        }
+
+    }    
+}
+
+@keyframes animate {
+
+  0%{
+    transform: translateX(-0.2px);
+  }
+
+  100%{
+    transform: translateX(-52px);
+  }
+  
+}
